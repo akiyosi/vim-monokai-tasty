@@ -448,25 +448,27 @@ hi link pythonDoctest2 Comment
 " let s:purple_slate = { "cterm": 60, "gui": "#5f5f87" }
 
 if has('nvim')
-  let  g:terminal_color_0 = s:charcoal
-  let  g:terminal_color_1 = s:orange
-  let  g:terminal_color_2 = s:light_green
-  let  g:terminal_color_3 = s:yellow
-  let  g:terminal_color_4 = s:light_blue
-  let  g:terminal_color_5 = s:purple
-  let  g:terminal_color_6 = s:dark_grey
-  let  g:terminal_color_7 = s:white
-  let  g:terminal_color_8 = s:charcoal
-  let  g:terminal_color_9 = s:orange
-  let g:terminal_color_10 = s:light_green
-  let g:terminal_color_11 = s:yellow
-  let g:terminal_color_12 = s:light_blue
-  let g:terminal_color_13 = s:purple
-  let g:terminal_color_14 = s:dark_grey
-  let g:terminal_color_15 = s:white
+  " let g:terminal_ansi_colors = [
+  let  g:terminal_color_0 = '#2b2b2b'
+  let  g:terminal_color_1 = '#fad07a'
+  let  g:terminal_color_2 = '#A4E400'
+  let  g:terminal_color_3 = "yellow"
+  let  g:terminal_color_4 = '#62D8F1'
+  let  g:terminal_color_5 = '#af87ff'
+  let  g:terminal_color_6 = '#5f5f5f'
+  let  g:terminal_color_7 = '#ffffff'
+  let  g:terminal_color_8 = '#2b2b2b' 
+  let  g:terminal_color_9 = '#fad07a' 
+  let g:terminal_color_10 = '#A4E400' 
+  let g:terminal_color_11 = "yellow"  
+  let g:terminal_color_12 = '#62D8F1' 
+  let g:terminal_color_13 = '#af87ff' 
+  let g:terminal_color_14 = '#5f5f5f' 
+  let g:terminal_color_15 = '#ffffff' 
 else
   " let g:terminal_ansi_colors = ['#1c1c1c', '#cf6a4c', '#70b950', '#fad07a', '#8fbfdc', '#c6b6ee', '#89b8c2', '#e8e8d3', '#6b7089', '#cf6a4c', '#70b950', '#fad07a', '#8fbfdc', '#c6b6ee', '#89b8c2', '#e8e8d3']
-  let g:terminal_ansi_colors = [s:charcoal     , s:orange       , s:light_green  , s:yellow       , s:light_blue   , s:purple       , s:dark_grey    , s:white        , s:charcoal     , s:orange       , s:light_green  , s:yellow       , s:light_blue   , s:purple       , s:dark_grey    , s:white        ] 
+  let g:terminal_ansi_colors = ['#2b2b2b','#fad07a','#A4E400',"yellow" ,'#62D8F1','#af87ff','#5f5f5f','#ffffff','#2b2b2b','#fad07a','#A4E400',"yellow" ,'#62D8F1','#af87ff','#5f5f5f','#ffffff']
+
 endif
 
 " Must be at the end, because of ctermbg=234 bug.
