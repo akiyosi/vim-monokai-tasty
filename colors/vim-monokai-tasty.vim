@@ -424,6 +424,51 @@ hi link pythonTripleQuotes Comment
 hi link pythonDoctest Comment
 hi link pythonDoctest2 Comment
 
+" let s:yellow = { "cterm": 228, "gui": "#ffff87" }
+" let s:purple = { "cterm": 141, "gui": "#af87ff" }
+" let s:light_green = { "cterm": 148, "gui": "#A4E400" }
+" let s:light_blue = { "cterm": 81, "gui": "#62D8F1" }
+" let s:magenta = { "cterm": 197, "gui": "#FC1A70" }
+" let s:orange = { "cterm": 208, "gui": "#FF9700" }
+" let s:black = { "cterm": 0, "gui": "#000000" }
+" let s:bright_yellow = { "cterm": 11, "gui": "yellow" }
+" let s:white = { "cterm": 231, "gui": "#ffffff" }
+" let s:light_grey = { "cterm": 250, "gui": "#bcbcbc" }
+" let s:grey = { "cterm": 245, "gui": "#8a8a8a" }
+" let s:dark_grey = { "cterm": 59, "gui": "#5f5f5f" }
+" let s:darker_grey = { "cterm": 238, "gui": "#444444" }
+" let s:light_charcoal = { "cterm": 238, "gui": "#2b2b2b" }
+" let s:charcoal = { "cterm": 235, "gui": "#262626" }
+" let s:danger = { "cterm": 197, "gui": "#ff005f" }
+" let s:olive = { "cterm": 64, "gui": "#5f8700" }
+" let s:dark_red = { "cterm": 88, "gui": "#870000" }
+" let s:blood_red = { "cterm": 52, "gui": "#5f0000" }
+" let s:dark_green = { "cterm": 22, "gui": "#005f00" }
+" let s:bright_blue = { "cterm": 33, "gui": "#0087ff" }
+" let s:purple_slate = { "cterm": 60, "gui": "#5f5f87" }
+
+if has('nvim')
+  let  g:terminal_color_0 = s:charcoal
+  let  g:terminal_color_1 = s:orange
+  let  g:terminal_color_2 = s:light_green
+  let  g:terminal_color_3 = s:yellow
+  let  g:terminal_color_4 = s:light_blue
+  let  g:terminal_color_5 = s:purple
+  let  g:terminal_color_6 = s:dark_grey
+  let  g:terminal_color_7 = s:white
+  let  g:terminal_color_8 = s:charcoal
+  let  g:terminal_color_9 = s:orange
+  let g:terminal_color_10 = s:light_green
+  let g:terminal_color_11 = s:yellow
+  let g:terminal_color_12 = s:light_blue
+  let g:terminal_color_13 = s:purple
+  let g:terminal_color_14 = s:dark_grey
+  let g:terminal_color_15 = s:white
+else
+  " let g:terminal_ansi_colors = ['#1c1c1c', '#cf6a4c', '#70b950', '#fad07a', '#8fbfdc', '#c6b6ee', '#89b8c2', '#e8e8d3', '#6b7089', '#cf6a4c', '#70b950', '#fad07a', '#8fbfdc', '#c6b6ee', '#89b8c2', '#e8e8d3']
+  let g:terminal_ansi_colors = [s:charcoal     , s:orange       , s:light_green  , s:yellow       , s:light_blue   , s:purple       , s:dark_grey    , s:white        , s:charcoal     , s:orange       , s:light_green  , s:yellow       , s:light_blue   , s:purple       , s:dark_grey    , s:white        ] 
+endif
+
 " Must be at the end, because of ctermbg=234 bug.
 " https://groups.google.com/forum/#!msg/vim_dev/afPqwAFNdrU/nqh6tOM87QUJ
 set background=dark
