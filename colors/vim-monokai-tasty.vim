@@ -447,28 +447,27 @@ hi link pythonDoctest2 Comment
 " let s:bright_blue = { "cterm": 33, "gui": "#0087ff" }
 " let s:purple_slate = { "cterm": 60, "gui": "#5f5f87" }
 
+
 if has('nvim')
   " let g:terminal_ansi_colors = [
   let  g:terminal_color_0 = '#2b2b2b'
-  let  g:terminal_color_1 = '#fad07a'
+  let  g:terminal_color_1 = '#ff005f'
   let  g:terminal_color_2 = '#A4E400'
-  let  g:terminal_color_3 = "yellow"
-  let  g:terminal_color_4 = '#62D8F1'
+  let  g:terminal_color_3 = "#ffff87"
+  let  g:terminal_color_4 = '#0087ff'
   let  g:terminal_color_5 = '#af87ff'
-  let  g:terminal_color_6 = '#5f5f5f'
+  let  g:terminal_color_6 = '#62D8F1'
   let  g:terminal_color_7 = '#ffffff'
-  let  g:terminal_color_8 = '#2b2b2b' 
-  let  g:terminal_color_9 = '#fad07a' 
+  let  g:terminal_color_8 = '#5f5f5f' 
+  let  g:terminal_color_9 = '#FC1A70' 
   let g:terminal_color_10 = '#A4E400' 
-  let g:terminal_color_11 = "yellow"  
-  let g:terminal_color_12 = '#62D8F1' 
+  let g:terminal_color_11 = "#ffff87" 
+  let g:terminal_color_12 = '#0087ff' 
   let g:terminal_color_13 = '#af87ff' 
-  let g:terminal_color_14 = '#5f5f5f' 
+  let g:terminal_color_14 = '#62D8F1' 
   let g:terminal_color_15 = '#ffffff' 
 else
-  " let g:terminal_ansi_colors = ['#1c1c1c', '#cf6a4c', '#70b950', '#fad07a', '#8fbfdc', '#c6b6ee', '#89b8c2', '#e8e8d3', '#6b7089', '#cf6a4c', '#70b950', '#fad07a', '#8fbfdc', '#c6b6ee', '#89b8c2', '#e8e8d3']
-  let g:terminal_ansi_colors = ['#2b2b2b','#fad07a','#A4E400',"yellow" ,'#62D8F1','#af87ff','#5f5f5f','#ffffff','#2b2b2b','#fad07a','#A4E400',"yellow" ,'#62D8F1','#af87ff','#5f5f5f','#ffffff']
-
+  let g:terminal_ansi_colors = ['#2b2b2b','#ff005f','#A4E400',"#ffff87",'#0087ff','#af87ff','#62D8F1','#ffffff','#5f5f5f','#FC1A70','#A4E400',"#ffff87",'#0087ff','#af87ff','#62D8F1','#ffffff']
 endif
 
 " Must be at the end, because of ctermbg=234 bug.
